@@ -7,8 +7,9 @@ EXTRA_OECONF += "--enable-epoll --enable-icap-client --with-dl --enable-linux-ne
 EXTRA_OEMAKE += "DEFAULT_STYLESHEET=${sysconfdir}/squid/errorpage.css DEFAULT_CONFIG_DIR=${sysconfdir}/squid"
 
 SRC_URI += " \
-	file://squidv3-build-cf_gen.patch \
 	file://fix-runs-in-configure.patch \
+	file://squidv3-build-cf_gen.patch \
+	file://configure-fix.patch \
 	"
 
 SRC_URI[squid-3.1.9.md5sum] = "896ace723445ac168986ba8854437ce3"
