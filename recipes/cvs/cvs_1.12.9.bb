@@ -6,6 +6,7 @@ LICENSE = "GPL"
 PR = "r1"
 
 SRC_URI = "http://musthave.sunbase.org/progs/ccvs/cvs-${PV}/cvs-${PV}.tar.bz2 \
+           file://configure-fix.patch \
 	   file://m4.patch \
 	   file://fix-__mempcpy.patch \
 	  "
